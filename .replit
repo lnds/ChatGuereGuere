@@ -1,0 +1,11 @@
+entrypoint = "main.py"
+
+modules = ["python-3.10:v5-20230613-622effa"]
+
+hidden = [".pythonlibs"]
+
+[nix]
+channel = "stable-23_05"
+
+[deployment]
+run = ["sh", "-c", "python3 main.py"]
